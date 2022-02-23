@@ -8,7 +8,7 @@
     "build:clean": "lage build --no-cache",
     "clean": "lage clean --no-cache && cospace purge",
     "setOverrides": "cospace override",
-    "dev": "lage dev"
+    "dev": "pnpm --filter '@itwin/core-extension' --filter '@itwin/core-frontend' run build -- --watch && pnpm run start --stream --parallel --filter '@itwin/viewer-react' --filter '@itwin/web-viewer-react' --filter '@itwin/web-viewer-test' --filter '@itwin/test-extension'"
   },
   "devDependencies": {
     "create-cospace": "latest",
