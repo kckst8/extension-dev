@@ -5,31 +5,31 @@
     },
     {
       "name": "viewer",
-      "path": "repos/viewer/packages/modules/viewer-react"
+      "path": "../viewer/packages/modules/viewer-react"
     },
     {
       "name": "web-viewer",
-      "path": "repos/viewer/packages/modules/web-viewer-react"
+      "path": "../viewer/packages/modules/web-viewer-react"
     },
     {
       "name": "desktop-viewer",
-      "path": "repos/viewer/packages/modules/desktop-viewer-react"
+      "path": "../viewer/packages/modules/desktop-viewer-react"
     },
     {
       "name": "web-viewer-app",
-      "path": "repos/viewer/packages/apps/web-viewer-test"
+      "path": "../viewer/packages/apps/web-viewer-test"
     },
     {
       "name": "core-extension",
-      "path": "repos/itwinjs-core/core/extension"
+      "path": "../itwinjs-core/core/extension"
     },
     {
       "name": "core-frontend",
-      "path": "repos/itwinjs-core/core/frontend"
+      "path": "../itwinjs-core/core/frontend"
     },
     {
       "name": "test-extension",
-      "path": "repos/test-extension"
+      "path": "../viewer/packages/modules/test-extension"
     }
   ],
   "settings": {
@@ -39,7 +39,7 @@
     "files.exclude": {
       "**/lib": false,
       "**/node_modules": false,
-      "repos/": true
+      "../": true
     }
   }
 }

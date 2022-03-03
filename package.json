@@ -8,10 +8,10 @@
     "build:clean": "lage build --no-cache",
     "clean": "lage clean --no-cache && cospace purge",
     "setOverrides": "cospace override",
-    "dev": "pnpm --filter '@itwin/core-extension' --filter '@itwin/core-frontend' run build -- --watch && pnpm run start --stream --parallel --filter '@itwin/viewer-react' --filter '@itwin/web-viewer-react' --filter '@itwin/web-viewer-test' --filter '@itwin/test-extension'"
+    "dev": "pnpm --filter '@itwin/core-extension' --filter '@itwin/core-frontend' run build -- --watch && pnpm run start --stream --parallel --filter '@itwin/viewer-react' --filter '@itwin/web-viewer-react' --filter '@itwin/web-viewer-test' --filter '@itwin/test-extension' --filter '@itwin/core-extension'"
   },
   "devDependencies": {
-    "create-cospace": "latest",
+    "cospace": "^0.4.0",
     "lage": "latest"
   },
   "pnpm": {
@@ -56,7 +56,6 @@
       "@itwin/presentation-components": "workspace:*",
       "@itwin/presentation-frontend": "workspace:*",
       "@itwin/presentation-testing": "workspace:*",
-      "@itwin/test-extension": "workspace:*",
       "@itwin/viewer-react": "workspace:*",
       "@itwin/web-viewer-react": "workspace:*",
       "@itwin/webgl-compatibility": "workspace:*",
