@@ -10,14 +10,12 @@ Setup a `CoSpace` to link multiple (mono)repos together!
 
 ## Getting started
 
-1. Clone all the repos you want to link together under the `repos` directory.
+1. Clone the [iTwin Viewer](https://github.com/iTwin/viewer) and [iTwin.js](https://github.com/iTwin/itwinjs-core) repos in sibling directories to this.
 
-1. Update the [pnpm-workspace.yaml](pnpm-workspace.yaml) file with all the packages you want to add to your CoSpace.
+2. Run `pnpm setOverrides` to automatically update the `pnpm.overrides` section of the CoSpace's [package.json](package.json), to use the local package version from the workspace, disregarding semver. Useful for when you have pre-release versions of packages in your workspace.
 
-1. Update the [cospace.code-workspace](cospace.code-workspace) file with all the repos you want to add to your VsCode multi root workspace.
+3. Run `pnpm install` to install all the packages you've added to your CoSpace.
 
-1. (Optional) Run `pnpm setOverrides` to automatically update the `pnpm.overrides` section of the CoSpace's [package.json](package.json), to use the local package version from the workspace, disregarding semver. Useful for when you have pre-release versions of packages in your workspace.
+4. Run `pnpm build` to build all the packages you've added to your CoSpace using your monorepo task runner. I'm using [lage](https://microsoft.github.io/lage/), but [turborepo](https://turborepo.org/docs) should theoretically work.
 
-1. Run `pnpm install` to install all the packages you've added to your CoSpace.
-
-1. Run `pnpm build` to build all the packages you've added to your CoSpace using your monorepo task runner. I'm using [lage](https://microsoft.github.io/lage/), but [turborepo](https://turborepo.org/docs) should theoretically work.
+5. Run `pnpm dev` from the extension-dev directory to compile in watch mode while developing.
