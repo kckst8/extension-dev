@@ -2666,10 +2666,13 @@ importers:
       '@itwin/imodels-access-frontend': ^1.0.1
       '@itwin/imodels-client-management': ^1.0.1
       '@itwin/itwinui-react': ^1.16.2
+      '@itwin/measure-tools-react': ^0.6.0
       '@itwin/presentation-common': workspace:*
       '@itwin/presentation-frontend': workspace:*
+      '@itwin/property-grid-react': ^0.3.0
       '@itwin/reality-data-client': ^0.7.0
       '@itwin/test-extension': 1.0.0
+      '@itwin/tree-widget-react': ^0.3.0
       '@itwin/web-viewer-react': workspace:*
       '@itwin/webgl-compatibility': workspace:*
       '@svgr/webpack': ^5.5.0
@@ -2707,10 +2710,13 @@ importers:
       '@itwin/imodels-access-frontend': 1.0.1
       '@itwin/imodels-client-management': 1.0.1
       '@itwin/itwinui-react': 1.32.0_react-dom@17.0.2+react@17.0.2
+      '@itwin/measure-tools-react': 0.6.0_react-dom@17.0.2+react@17.0.2
       '@itwin/presentation-common': link:../../../../itwinjs-core/presentation/common
       '@itwin/presentation-frontend': link:../../../../itwinjs-core/presentation/frontend
+      '@itwin/property-grid-react': 0.3.0_c60127e3b8a39d0c7f8bd65123e8cb21
       '@itwin/reality-data-client': 0.7.1
       '@itwin/test-extension': link:../../modules/test-extension
+      '@itwin/tree-widget-react': 0.3.0_react-dom@17.0.2+react@17.0.2
       '@itwin/web-viewer-react': link:../../modules/web-viewer-react
       '@itwin/webgl-compatibility': link:../../../../itwinjs-core/core/webgl-compatibility
       history: 4.10.1
@@ -2943,13 +2949,10 @@ importers:
       '@itwin/imodels-access-frontend': ^1.0.1
       '@itwin/imodels-client-management': ^1.0.1
       '@itwin/itwinui-react': ^1.16.2
-      '@itwin/measure-tools-react': ^0.2.0
       '@itwin/presentation-common': workspace:*
       '@itwin/presentation-components': workspace:*
       '@itwin/presentation-frontend': workspace:*
-      '@itwin/property-grid-react': ^0.2.0
       '@itwin/reality-data-client': ^0.7.0
-      '@itwin/tree-widget-react': ^0.2.0
       '@itwin/webgl-compatibility': workspace:*
       '@microsoft/applicationinsights-react-js': 2.3.1
       '@microsoft/applicationinsights-web': 2.3.1
@@ -2968,7 +2971,6 @@ importers:
       react: ^17.0.2
       react-dom: ^17.0.2
       react-redux: ^7.2.0
-      react-spring: ^8.0.27
       redux: ^4.0.5
       rimraf: ^3.0.2
       ts-jest: ^26.1.1
@@ -2977,12 +2979,8 @@ importers:
       '@bentley/icons-generic-webfont': 1.0.34
       '@itwin/error-handling-react': link:../error-handling-react
       '@itwin/itwinui-react': 1.32.0_react-dom@17.0.2+react@17.0.2
-      '@itwin/measure-tools-react': 0.2.0_react-dom@17.0.2+react@17.0.2
-      '@itwin/property-grid-react': 0.2.1_c60127e3b8a39d0c7f8bd65123e8cb21
-      '@itwin/tree-widget-react': 0.2.1_react-dom@17.0.2+react@17.0.2
       '@microsoft/applicationinsights-react-js': 2.3.1
       '@microsoft/applicationinsights-web': 2.3.1
-      react-spring: 8.0.27_react-dom@17.0.2+react@17.0.2
     devDependencies:
       '@itwin/appui-abstract': link:../../../../itwinjs-core/ui/appui-abstract
       '@itwin/appui-layout-react': link:../../../../itwinjs-core/ui/appui-layout-react
@@ -6100,8 +6098,8 @@ packages:
       react-transition-group: 4.1.1_react-dom@17.0.2+react@17.0.2
     dev: false
 
-  /@itwin/measure-tools-react/0.2.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-gu9koCFpoJu4+/3hh7KxL7T3p8SCe+4fdW5roOkSxwrO/7NSZ7NxmCCGAB5dPVtRtI0mLU6pFB+Cx4pvmiG+AQ==}
+  /@itwin/measure-tools-react/0.6.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-IYP0EQKNJy/yqAQgZ/k8TaQ/5TgB5QwFPjD2SszNeNsFlvvTNH1ZeVYHY4WnIy7Sf/0ZqpBuHTOy1eggfC8zAg==}
     peerDependencies:
       '@itwin/appui-abstract': ^3.0.0
       '@itwin/appui-layout-react': ^3.0.0
@@ -6121,9 +6119,10 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: false
 
-  /@itwin/property-grid-react/0.2.1_c60127e3b8a39d0c7f8bd65123e8cb21:
-    resolution: {integrity: sha512-h66GkmqmbSpq+SHcxcyT6yvvCQ98ooZ9bKTYRYFDFrVi2JK6uxs4hHIK120mQt5Skp/VgSKjpUnSXGixR6Yt7A==}
+  /@itwin/property-grid-react/0.3.0_c60127e3b8a39d0c7f8bd65123e8cb21:
+    resolution: {integrity: sha512-2+WNUT9OGzWMT7HJ4KBh1pEtR+csc57nU46gf9KfaPu7sEWNI0mbS40iax4vbsYzPOxr/AKi55iOUvCff1c2oQ==}
     peerDependencies:
+      '@itwin/core-frontend': ^3.0.0
       react: ^17.0.2
       react-dom: ^17.0.2
       react-redux: ^7.2.0
@@ -6154,8 +6153,8 @@ packages:
     transitivePeerDependencies:
       - debug
 
-  /@itwin/tree-widget-react/0.2.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-QrmiG4OdkaFPevzBX6MuhZlccarEw+tRBpFlDiIi2H9yhxrRyS6gTUZHOWdovYDL6fTFWxZFpMASRR98xiMxQQ==}
+  /@itwin/tree-widget-react/0.3.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-wrHxDrnDbJ1Xi/zSpQ+jIii1Iv33SABWOh40GjrMYG85jwXrM3aCHkQoJ1BUmCHqyNjbAlvCfod5MusNJuxjDw==}
     peerDependencies:
       react: ^17.0.2
       react-dom: ^17.0.2
