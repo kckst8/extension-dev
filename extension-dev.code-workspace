@@ -28,8 +28,12 @@
       "path": "../itwinjs-core/core/frontend"
     },
     {
-      "name": "test-extension",
-      "path": "../viewer/packages/modules/test-extension"
+      "name": "test-local-extension",
+      "path": "../viewer/packages/modules/test-local-extension"
+    },
+    {
+      "name": "test-remote-extension",
+      "path": "../viewer/packages/modules/test-remote-extension"
     }
   ],
   "settings": {

@@ -2671,7 +2671,7 @@ importers:
       '@itwin/presentation-frontend': workspace:*
       '@itwin/property-grid-react': ^0.3.0
       '@itwin/reality-data-client': ^0.7.0
-      '@itwin/test-extension': 1.0.0
+      '@itwin/test-local-extension': 1.0.0
       '@itwin/tree-widget-react': ^0.3.0
       '@itwin/web-viewer-react': workspace:*
       '@itwin/webgl-compatibility': workspace:*
@@ -2715,7 +2715,7 @@ importers:
       '@itwin/presentation-frontend': link:../../../../itwinjs-core/presentation/frontend
       '@itwin/property-grid-react': 0.3.0_c60127e3b8a39d0c7f8bd65123e8cb21
       '@itwin/reality-data-client': 0.7.1
-      '@itwin/test-extension': link:../../modules/test-extension
+      '@itwin/test-local-extension': link:../../modules/test-local-extension
       '@itwin/tree-widget-react': 0.3.0_react-dom@17.0.2+react@17.0.2
       '@itwin/web-viewer-react': link:../../modules/web-viewer-react
       '@itwin/webgl-compatibility': link:../../../../itwinjs-core/core/webgl-compatibility
@@ -2903,7 +2903,30 @@ importers:
       ts-jest: 26.5.6_jest@26.6.3+typescript@4.4.4
       typescript: 4.4.4
 
-  ../viewer/packages/modules/test-extension:
+  ../viewer/packages/modules/test-local-extension:
+    specifiers:
+      '@esbuild-plugins/node-globals-polyfill': ~0.1.1
+      '@esbuild-plugins/node-modules-polyfill': ~0.1.2
+      '@itwin/build-tools': workspace:*
+      '@itwin/core-extension': workspace:*
+      esbuild: ^0.13.13
+      npm-run-all: ^4.1.5
+      rimraf: ^3.0.2
+      serve: ^13.0.2
+      typescript: ~4.4.0
+    dependencies:
+      '@itwin/core-extension': link:../../../../itwinjs-core/core/extension
+    devDependencies:
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1_esbuild@0.13.15
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4_esbuild@0.13.15
+      '@itwin/build-tools': link:../../../../itwinjs-core/tools/build
+      esbuild: 0.13.15
+      npm-run-all: 4.1.5
+      rimraf: 3.0.2
+      serve: 13.0.2
+      typescript: 4.4.4
+
+  ../viewer/packages/modules/test-remote-extension:
     specifiers:
       '@esbuild-plugins/node-globals-polyfill': ~0.1.1
       '@esbuild-plugins/node-modules-polyfill': ~0.1.2
